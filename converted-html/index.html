@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Week 4</title>
+  		<link href="/assets/css/foundation.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="/bower_components/modernizr/modernizr.js"></script>
+	</head>
+	<body>
+		<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Week 4</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><a href="index">Home</a></li>
+	  <li><a href="orbit">Orbit</a></li>
+	  <li><a href="gallery">Gallery</a></li>
+	  <li><a href="slider">Slider</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+		
+		<div class="row">
+          <div class="large-12 columns">
+            <div class="hide-for-small">
+              <div id="featured">
+                    <img src="/assets/img/front.jpg" alt="slide image">   
+                </div>
+              </div>
+          <div class="row">
+            <div class="small-12 show-for-small"><br>
+              <img src="/assets/img/front.jpg"/>
+            </div>
+          </div>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row">
+              <div class="large-9 columns">
+                <div class="row">
+					<div class="large-6 small-6 columns">
+					  <h1>Heading</h1><hr/>
+					  <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.</h5>
+					</div>
+					<div class="large-6 small-6 columns panel">
+					  <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.</p>
+					</div>
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/assets/js/foundation.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.slick/1.4.0/slick.min.js"></script>
+<script>
+// TODO: Set up Range Slider's on_change to resize the image. See 'Callback Function' here: http://foundation.zurb.com/docs/components/range_slider.html
+$(document).foundation({
+  slider: {
+    on_change: function(){
+      // do something when the value changes
+    }
+  }
+});
+
+// TODO: If you want to use Slick in the orbit page, set it up here. More info: http://kenwheeler.github.io/slick/
+$('#autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+$('#add').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+});
+$(document).foundation({
+  slider: {
+    on_change: function(){
+	
+		var value = $('.range-slider').attr('data-slider');
+		console.log(value);
+		$("img").css('height', value*10 + 'px');
+
+   }
+  }
+});
+</script>
+
+	</body>
+</html>

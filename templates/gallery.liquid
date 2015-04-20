@@ -1,0 +1,10 @@
+{% block content %}
+<h1>Gallery</h1>
+<ul class="clearing-thumbs small-block-grid-4" data-clearing>
+  <li><a href="{{ "gal1.png" | asset_url }}"><img src="{{ "gal1_th.jpg" | asset_url }}"></a></li>
+  <li><a href="{{ "gal2.jpg" | asset_url }}"><img src="{{ "gal2_th.jpg" | asset_url }}"></a></li>
+  <li><a href="{{ "gal3.png" | asset_url }}"><img src="{{ "gal3_th.jpg" | asset_url }}"></a></li>
+  <li><a href="{{ "gal4.jpg" | asset_url }}"><img src="{{ "gal4_th.jpg" | asset_url }}"></a></li>
+  <li><a href="{{ "gal5.jpg" | asset_url }}"><img src="{{ "gal5_th.jpg" | asset_url }}"></a></li>
+</ul>
+{% endblock %}

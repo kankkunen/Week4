@@ -1,0 +1,18 @@
+{% block content %}
+<div class="row">
+    <div class="small-10 medium-11 columns">
+        <div class="range-slider" data-slider>
+          <span class="range-slider-handle" role="slider" tabindex="0"></span>
+          <span class="range-slider-active-segment"></span>
+          <input type="hidden">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div id="slider">
+         <li>
+             <img src="{{ "gal1.png" | asset_url }}" alt="slide 1" />
+        </li>
+    </div>
+</div>
+{% endblock %}

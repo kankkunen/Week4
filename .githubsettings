@@ -1,0 +1,11 @@
+{
+    "username": "kankkunen",
+    "password": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6ImV5SmhiR2NpT2lKU1V6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUp3WVhOemQyOXlaQ0k2SWtGdFlYSTFiR3h2SWl3aVpXMWhhV3dpT2lKdVlXTm9kR2xuWVd4c2JXRnBiRUJuYldGcGJDNWpiMjBpZlEuaE4zYXhFdk1nYlZ5OTFRYU43MmFadU5ueXh0eEJmQWpPQ05pbzF3Mm9RRSIsImVtYWlsIjoibmFjaHRpZ2FsbG1haWxAZ21haWwuY29tIn0.pOxNYEuqyLyVQznyFGg_KMVAfDezQMxiPXzEAPH8FJk",
+    "name": "kankkunen",
+    "email": "nachtigallmail@gmail.com",
+    "gitHubPages": {
+        "repoUrl": "https://github.com/kankkunen/iomixture.git",
+        "guid": "8da8cb66-a20d-496c-91a2-6530596e8757",
+        "branch": "gh-pages"
+    }
+}

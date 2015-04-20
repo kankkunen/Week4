@@ -1,0 +1,72 @@
+{% block content %}
+		<div class="row">
+          <div class="large-12 columns">
+			<ul class="example-orbit" id="autoplay" data-orbit>
+			  <li>
+				<img src="{{ "gal1.png" | asset_url }}" alt="slide 1" />
+				<div class="orbit-caption">
+				  Caption One.
+				</div>
+			  </li>
+			  <li class="active">
+				<img src="{{ "gal2.jpg" | asset_url }}" alt="slide 2" />
+				<div class="orbit-caption">
+				  Caption Two.
+				</div>
+			  </li>
+			  <li>
+				<img src="{{ "gal3.png" | asset_url }}" alt="slide 3" />
+				<div class="orbit-caption">
+				  Caption Three.
+				</div>
+			  </li>
+			  <li>
+				<img src="{{ "gal4.jpg" | asset_url }}" alt="slide 4" />
+				<div class="orbit-caption">
+				  Caption Four.
+				</div>
+			  </li>
+			  <li>
+				<img src="{{ "gal5.jpg" | asset_url }}" alt="slide 5" />
+				<div class="orbit-caption">
+				  Caption Five.
+				</div>
+			  </li>
+			</ul>
+		</div>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row">
+
+              <div class="large-12 columns">
+                <div class="row">
+					<div class="large-9 small-9 columns">
+					  <h1>Heading</h1><hr/>
+					  <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
+					  </h5>
+					</div>
+					
+					<div class="large-3 small-3 columns panel">
+                        <ul class="orbit-content" id="add" data-orbit>
+                            <li data-orbit-slide="add1">
+                                <div>
+					  <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.</p>
+                                </div>
+                            </li>
+                            <li data-orbit-slide="add2">
+                                <div>
+                                <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.</p>
+                                </div>
+                            </li>
+					</div>
+				</div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      
+            </div>
+          </div>
+        </div>
+{% endblock %}
